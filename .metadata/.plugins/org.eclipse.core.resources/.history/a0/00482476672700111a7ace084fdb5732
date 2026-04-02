@@ -1,5 +1,0 @@
-package com.hospital.gateway.filter;
-
-public class JwtFilter {
-
-}

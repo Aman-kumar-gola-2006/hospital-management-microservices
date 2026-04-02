@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PatientServiceTest" project="patient-service" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="com.hospital.patient.service.PatientServiceTest" time="2.518" displayname="PatientServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.hospital.patient.service.PatientServiceTest]">
-    <testcase name="testGetAllPatients_Success" classname="com.hospital.patient.service.PatientServiceTest" time="2.471" displayname="testGetAllPatients_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.patient.service.PatientServiceTest]/[method:testGetAllPatients_Success()]"/>
-    <testcase name="testGetPatientById_Found" classname="com.hospital.patient.service.PatientServiceTest" time="0.016" displayname="testGetPatientById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.patient.service.PatientServiceTest]/[method:testGetPatientById_Found()]"/>
-    <testcase name="testRegisterPatient_Success" classname="com.hospital.patient.service.PatientServiceTest" time="0.014" displayname="testRegisterPatient_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.patient.service.PatientServiceTest]/[method:testRegisterPatient_Success()]"/>
-    <testcase name="testGetPatientById_NotFound" classname="com.hospital.patient.service.PatientServiceTest" time="0.007" displayname="testGetPatientById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.patient.service.PatientServiceTest]/[method:testGetPatientById_NotFound()]"/>
-  </testsuite>
-</testrun>

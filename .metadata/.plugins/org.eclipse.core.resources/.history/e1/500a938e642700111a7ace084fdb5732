@@ -1,5 +1,0 @@
-package com.hospital.payment.dto;
-
-public class PaymentRequest {
-
-}

@@ -1,5 +1,0 @@
-package com.hospital.payment.repository;
-
-public interface PaymentRepository {
-
-}
