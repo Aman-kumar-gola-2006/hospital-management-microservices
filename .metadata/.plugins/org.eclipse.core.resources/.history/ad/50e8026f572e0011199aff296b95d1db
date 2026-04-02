@@ -1,0 +1,34 @@
+package com.hospital.auth.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.core.user.OAuth2User;
+import org.springframework.web.bind.annotation.*;
+import com.hospital.auth.dto.AuthResponse;
+import com.hospital.auth.service.AuthService;
+
+@RestController
+@RequestMapping("/auth")
+public class GoogleAuthController {
+
+    @Autowired
+    private AuthService authService;
+
+    @GetMapping("/google-success")
+    public AuthResponse googleSuccess(@AuthenticationPrincipal OAuth2User oauth2User) {
+        System.out.println("=== Google Callback Received ===");
+        
+        if (oauth2User == null) {
+            System.out.println("oauth2User is NULL");
+            return new AuthResponse(null, "Google login failed");
+        }
+        
+        String email = oauth2User.getAttribute("email");
+        String name = oauth2User.getAttribute("name");
+        
+        System.out.println("Email: " + email);
+        System.out.println("Name: " + name);
+        
+        return authService.googleLogin(email, name);
+    }
+}

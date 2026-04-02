@@ -1,0 +1,28 @@
+package com.hospital.auth.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.core.user.OAuth2User;
+import org.springframework.web.bind.annotation.*;
+import com.hospital.auth.dto.AuthResponse;
+import com.hospital.auth.service.AuthService;
+
+@RestController
+@RequestMapping("/auth")
+public class GoogleAuthController {
+
+    @Autowired
+    private AuthService authService;
+
+    @GetMapping("/google-login")
+    public String googleLogin() {
+        return "redirect:/oauth2/authorization/google";
+    }
+
+    @GetMapping("/google-success")
+    public AuthResponse googleSuccess(@AuthenticationPrincipal OAuth2User oauth2User) {
+        String email = oauth2User.getAttribute("email");
+        String name = oauth2User.getAttribute("name");
+        return authService.googleLogin(email, name);
+    }
+}

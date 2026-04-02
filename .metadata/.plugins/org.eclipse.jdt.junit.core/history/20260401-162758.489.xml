@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DoctorServiceTest" project="doctor-service" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="com.hospital.doctor.service.DoctorServiceTest" time="2.411" displayname="DoctorServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]">
+    <testcase name="testGetAllDoctors_Success" classname="com.hospital.doctor.service.DoctorServiceTest" time="2.311" displayname="testGetAllDoctors_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testGetAllDoctors_Success()]"/>
+    <testcase name="testGetDoctorsBySpecialization_Success" classname="com.hospital.doctor.service.DoctorServiceTest" time="0.033" displayname="testGetDoctorsBySpecialization_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testGetDoctorsBySpecialization_Success()]"/>
+    <testcase name="testDeleteDoctor_Success" classname="com.hospital.doctor.service.DoctorServiceTest" time="0.014" displayname="testDeleteDoctor_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testDeleteDoctor_Success()]"/>
+    <testcase name="testSaveDoctor_Success" classname="com.hospital.doctor.service.DoctorServiceTest" time="0.023" displayname="testSaveDoctor_Success()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testSaveDoctor_Success()]"/>
+    <testcase name="testGetDoctorById_NotFound" classname="com.hospital.doctor.service.DoctorServiceTest" time="0.017" displayname="testGetDoctorById_NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testGetDoctorById_NotFound()]"/>
+    <testcase name="testGetDoctorById_Found" classname="com.hospital.doctor.service.DoctorServiceTest" time="0.01" displayname="testGetDoctorById_Found()" uniqueid="[engine:junit-jupiter]/[class:com.hospital.doctor.service.DoctorServiceTest]/[method:testGetDoctorById_Found()]"/>
+  </testsuite>
+</testrun>

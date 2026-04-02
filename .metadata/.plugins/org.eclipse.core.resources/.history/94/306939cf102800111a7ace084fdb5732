@@ -1,0 +1,34 @@
+package com.hospital.patient.controller;
+
+import java.util.List;
+import jakarta.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.hospital.patient.entity.Patient;
+import com.hospital.patient.service.PatientService;
+
+@RestController
+@RequestMapping("/patient")
+public class PatientController {
+
+    @Autowired
+    private PatientService service;
+
+    @PostMapping("/register")
+    public ResponseEntity<Patient> registerPatient(@Valid @RequestBody Patient patient) {
+        Patient savedPatient = patientService.registerPatient(patient);
+        return new ResponseEntity<>(savedPatient, HttpStatus.CREATED);
+    }
+    
+    @GetMapping
+    public List<Patient> getAllPatients() {
+        return service.getAllPatients();
+    }
+
+    @GetMapping("/{id}")
+    public Patient getPatientById(@PathVariable Long id) {
+        return service.getPatientById(id);
+    }
+}

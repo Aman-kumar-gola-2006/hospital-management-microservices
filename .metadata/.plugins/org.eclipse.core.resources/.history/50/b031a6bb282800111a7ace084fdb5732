@@ -1,0 +1,29 @@
+package com.hospital.payment.dto;
+
+public class PaymentRequest {
+    private Long patientId;
+    private String patientName;
+    private Long appointmentId;
+    private Long doctorId;
+    private String doctorName;
+    private Double amount;
+    private String paymentMethod;
+    
+    // Getters
+    public Long getPatientId() { return patientId; }
+    public String getPatientName() { return patientName; }
+    public Long getAppointmentId() { return appointmentId; }
+    public Long getDoctorId() { return doctorId; }
+    public String getDoctorName() { return doctorName; }
+    public Double getAmount() { return amount; }
+    public String getPaymentMethod() { return paymentMethod; }
+    
+    // Setters
+    public void setPatientId(Long patientId) { this.patientId = patientId; }
+    public void setPatientName(String patientName) { this.patientName = patientName; }
+    public void setAppointmentId(Long appointmentId) { this.appointmentId = appointmentId; }
+    public void setDoctorId(Long doctorId) { this.doctorId = doctorId; }
+    public void setDoctorName(String doctorName) { this.doctorName = doctorName; }
+    public void setAmount(Double amount) { this.amount = amount; }
+    public void setPaymentMethod(String paymentMethod) { this.paymentMethod = paymentMethod; }
+}

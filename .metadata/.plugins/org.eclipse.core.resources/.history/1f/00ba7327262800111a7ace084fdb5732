@@ -1,0 +1,10 @@
+package com.hospital.appointment.controller;
+
+public class AppointmentController {
+	
+	@PostMapping("/book")
+	public ResponseEntity<Appointment> bookAppointment(@Valid @RequestBody AppointmentRequest request) {
+	    // ...
+	}
+
+}
